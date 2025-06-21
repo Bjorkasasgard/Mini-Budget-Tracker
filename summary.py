@@ -11,28 +11,26 @@ def show_summary(data):
     print(f"Total Expenses   : {format_rupiah(abs(expense))}")
     print(f"Current Balance  : {format_rupiah(balance)}")
 
-    
-    # Prevent chart generation if there is no data
     if income == 0 and expense == 0:
         print("\nNo data to visualize.")
         return
 
-    # Panggil fungsi visualisasi
     visualize_summary(income, abs(expense))
 
 def visualize_summary(income, expense):
-    # Data untuk pie chart
     labels = 'Income', 'Expenses'
     sizes = [income, expense]
-    colors = ['#66b3ff', '#ff9999']  # Biru untuk pemasukan, merah untuk pengeluaran
-    explode = (0.1, 0)  # "Meledakkan" irisan pemasukan sedikit
+    colors = ['#66b3ff', '#ff9999'] 
+    explode = (0.1, 0) 
 
-    # Membuat pie chart
-    plt.figure(figsize=(8, 6))  # Ukuran chart
+    plt.figure(figsize=(8, 6))  
     plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', 
             shadow=True, startangle=90)
-    plt.title('Income vs Expenses', fontsize=16)
-    plt.axis('equal')  # Membuat lingkaran sempurna
+    plt.title('Income & Expenses', fontsize=16)
 
-    # Menampilkan chart
-    plt.show()
+    plt.axis('equal') 
+
+    # Show the plot non-blockingly, pause for 5 seconds, then close it.
+    plt.show(block=False)
+    plt.pause(5)
+    plt.close()

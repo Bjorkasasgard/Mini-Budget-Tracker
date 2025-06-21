@@ -2,7 +2,6 @@ from transaction import add_transaction, show_transactions, delete_transaction
 from summary import show_summary
 from file_handler import load_data, save_data
 
-
 def show_user_guide():
     guide_text = """ 
     =======================================================================
@@ -30,14 +29,14 @@ def show_user_guide():
        - Removes a transaction based on its list number.
 
     4. Show Financial Summary:
-       - Provides a summary of total income, expenses, and your final balance.
+       - Provides a summary of total income, expenses, your final balance,
+         and a pie chart visualization.
 
     5. Save & Exit:
        - IMPORTANT! Use this to exit and save all your data.
 
-       
-    do you want this program code? check my github:
-    github: 
+    Want the code for this program? Check out my GitHub:
+    GitHub: https://github.com/Bjorkasasgard/Mini-Budget-Tracker 
     For Feedback:
     Email: adam.bastian_ti24@nusaputra.ac.id
     =======================================================================
