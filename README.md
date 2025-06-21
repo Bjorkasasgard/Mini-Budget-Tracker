@@ -1,1 +1,2 @@
-# Mini-Budget-Tracker
+# Mini-Budget-Tracker by adam bastian chaniago
+
