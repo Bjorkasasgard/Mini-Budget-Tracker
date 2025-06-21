@@ -1,0 +1,1 @@
+[{"description": "Salary", "amount": 5000000.0, "category": "Salary"}, {"description": "Mie Goreng", "amount": -10000.0, "category": "Food"}]
