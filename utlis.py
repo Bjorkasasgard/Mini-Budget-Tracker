@@ -14,7 +14,7 @@ def input_menu(prompt, options):
         if choice in options:
             return choice
         print("Invalid choice. Please choose from", options)
-# by adam
+
 def convert_usd_to_idr(amount_usd):
     exchange_rate = 15500.0 
     return amount_usd * exchange_rate
