@@ -27,9 +27,6 @@ def visualize_summary(income, expense):
     plt.pie(sizes, explode=explode, labels=labels, colors=colors, autopct='%1.1f%%', 
             shadow=True, startangle=90)
     plt.title('Income & Expenses', fontsize=16)
-
     plt.axis('equal') 
-    # Show the plot non-blockingly, pause for 5 seconds, then close it.
-    plt.show(block=False)
-    plt.pause(5)
-    plt.close()
+    plt.show() 
+   

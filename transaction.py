@@ -40,7 +40,7 @@ def edit_transaction(data):
         index_str = input("Enter the number of the transaction to edit (or 0 to cancel): ")
         index = int(index_str) - 1
 
-        if index == -1: # User chose 0 to cancel
+        if index == -1: 
             print("Edit cancelled.")
             return
 
@@ -64,7 +64,7 @@ def edit_transaction(data):
         elif choice == "3":
             transaction['category'] = input("Enter new category: ")
         
-        if choice: # Only print if an edit was made
+        if choice: 
             print("Transaction updated successfully.")
     except ValueError:
         print("Invalid input. Please enter a number.")
